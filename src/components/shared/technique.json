@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_techniques",
+  "info": {
+    "displayName": "Technique",
+    "description": "A technique or skill used in the project"
+  },
+  "options": {},
+  "attributes": {
+    "technique": {
+      "type": "string",
+      "required": true
+    }
+  }
+} 
