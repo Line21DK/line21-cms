@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_video_contents",
+  "info": {
+    "displayName": "Video Content",
+    "description": "Video content with title, URL, thumbnail and description"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "sectionTitle": {
+      "type": "string",
+      "default": "Videos",
+      "description": "Overskrift for video-sektionen"
+    }
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "layouts": {
+    "list": [
+      {
+        "name": "Projekt Information",
+        "size": 6,
+        "fields": ["title", "client", "category", "year"]
+      },
+      {
+        "name": "Status & Visuel",
+        "size": 6,
+        "fields": ["featured", "thumbnail"]
+      }
+    ]
+  },
+  "metadatas": {
+    "featured": {
+      "list": {
+        "label": "Fremhævet",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "title": {
+      "list": {
+        "label": "Titel",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "slug": {
+      "list": {
+        "label": "Slug",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "client": {
+      "list": {
+        "label": "Klient",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "category": {
+      "list": {
+        "label": "Kategori",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "projectIcon": {
+      "list": {
+        "label": "Ikon",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "thumbnail": {
+      "list": {
+        "label": "Billede",
+        "searchable": false,
+        "sortable": false
+      }
+    },
+    "role": {
+      "list": {
+        "label": "Rolle",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "year": {
+      "list": {
+        "label": "År",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "startDate": {
+      "list": {
+        "label": "Startdato",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "endDate": {
+      "list": {
+        "label": "Slutdato",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "description": {
+      "list": {
+        "label": "Beskrivelse",
+        "searchable": true,
+        "sortable": false
+      }
+    },
+    "shortDescription": {
+      "list": {
+        "label": "Kort Beskrivelse",
+        "searchable": true,
+        "sortable": false
+      }
+    },
+    "challenge": {
+      "list": {
+        "label": "Udfordringer",
+        "searchable": true,
+        "sortable": false
+      }
+    },
+    "solution": {
+      "list": {
+        "label": "Løsninger",
+        "searchable": true,
+        "sortable": false
+      }
+    },
+    "featuredVideo": {
+      "list": {
+        "label": "Fremhævet Video",
+        "searchable": false,
+        "sortable": false
+      }
+    },
+    "featuredImagesTitle": {
+      "list": {
+        "label": "Featured Images Titel",
+        "searchable": true,
+        "sortable": false
+      }
+    },
+    "featuredImagesDescription": {
+      "list": {
+        "label": "Featured Images Beskrivelse",
+        "searchable": true,
+        "sortable": false
+      }
+    },
+    "featuredImages": {
+      "list": {
+        "label": "Fremhævede Billeder",
+        "searchable": false,
+        "sortable": false
+      }
+    },
+    "shortFormVideosTitle": {
+      "list": {
+        "label": "Short Form Videos Titel",
+        "searchable": true,
+        "sortable": false
+      }
+    },
+    "shortFormVideos": {
+      "list": {
+        "label": "Korte Videoer",
+        "searchable": false,
+        "sortable": false
+      }
+    },
+    "longFormVideosTitle": {
+      "list": {
+        "label": "Long Form Videos Titel",
+        "searchable": true,
+        "sortable": false
+      }
+    },
+    "longFormVideos": {
+      "list": {
+        "label": "Lange Videoer",
+        "searchable": false,
+        "sortable": false
+      }
+    },
+    "contentStrategy": {
+      "list": {
+        "label": "Content Strategy",
+        "searchable": false,
+        "sortable": false
+      }
+    },
+    "productionTechniques": {
+      "list": {
+        "label": "Produktionsteknikker",
+        "searchable": false,
+        "sortable": false
+      }
+    },
+    "results": {
+      "list": {
+        "label": "Resultater",
+        "searchable": false,
+        "sortable": false
+      }
+    },
+    "links": {
+      "list": {
+        "label": "Links",
+        "searchable": false,
+        "sortable": false
+      }
+    },
+    "seo": {
+      "list": {
+        "label": "SEO",
+        "searchable": false,
+        "sortable": false
+      }
+    }
+  }
+} 

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_project_results",
+  "info": {
+    "displayName": "Project Result",
+    "description": "Project result with metric, value and description"
+  },
+  "options": {},
+  "attributes": {
+    "metric": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+} 

@@ -1,0 +1,254 @@
+{
+  "layouts": {
+    "edit": [
+      {
+        "name": "Projekt Status",
+        "size": 6,
+        "fields": ["featured"]
+      },
+      {
+        "name": "Grundlæggende Information",
+        "size": 6,
+        "fields": ["title", "slug", "client", "category", "projectIcon"]
+      },
+      {
+        "name": "Visuel Identitet",
+        "size": 12,
+        "fields": ["thumbnail"]
+      },
+      {
+        "name": "Projekt Detaljer",
+        "size": 6,
+        "fields": ["role", "year", "startDate", "endDate"]
+      },
+      {
+        "name": "Beskrivelse & Kontekst",
+        "size": 6,
+        "fields": ["description", "shortDescription", "challenge", "solution"]
+      },
+      {
+        "name": "Featured Content",
+        "size": 12,
+        "fields": ["featuredVideo", "featuredImages", "featuredImagesTitle", "featuredImagesDescription"]
+      },
+      {
+        "name": "Video Content",
+        "size": 6,
+        "fields": ["shortFormVideos", "shortFormVideosTitle", "longFormVideos", "longFormVideosTitle"]
+      },
+      {
+        "name": "Teknikker & Strategi",
+        "size": 6,
+        "fields": ["contentStrategy", "productionTechniques"]
+      },
+      {
+        "name": "Resultater & Links",
+        "size": 6,
+        "fields": ["results", "links"]
+      },
+      {
+        "name": "SEO",
+        "size": 6,
+        "fields": ["seo"]
+      }
+    ]
+  },
+  "metadatas": {
+    "featured": {
+      "edit": {
+        "label": "Fremhævet Projekt",
+        "description": "Vises på forsiden som featured projekt",
+        "placeholder": "Vælg om projektet skal fremhæves"
+      }
+    },
+    "title": {
+      "edit": {
+        "label": "Projekt Titel",
+        "description": "Projektets hovedtitel",
+        "placeholder": "Indtast projektets titel"
+      }
+    },
+    "slug": {
+      "edit": {
+        "label": "URL Slug",
+        "description": "URL-slug for projektet",
+        "placeholder": "projekt-navn"
+      }
+    },
+    "client": {
+      "edit": {
+        "label": "Klient",
+        "description": "Klientens navn",
+        "placeholder": "Indtast klientens navn"
+      }
+    },
+    "category": {
+      "edit": {
+        "label": "Kategori",
+        "description": "Projektets kategori",
+        "placeholder": "Vælg kategori"
+      }
+    },
+    "projectIcon": {
+      "edit": {
+        "label": "Projekt Ikon",
+        "description": "Ikon der repræsenterer projektet",
+        "placeholder": "Vælg projekt ikon"
+      }
+    },
+    "thumbnail": {
+      "edit": {
+        "label": "Hovedbillede",
+        "description": "Hovedbillede for projektet",
+        "placeholder": "Upload hovedbillede"
+      }
+    },
+    "role": {
+      "edit": {
+        "label": "Rolle",
+        "description": "Din rolle i projektet",
+        "placeholder": "Indtast din rolle"
+      }
+    },
+    "year": {
+      "edit": {
+        "label": "År",
+        "description": "År projektet blev udført",
+        "placeholder": "2024"
+      }
+    },
+    "startDate": {
+      "edit": {
+        "label": "Startdato",
+        "description": "Startdato for projektet",
+        "placeholder": "Vælg startdato"
+      }
+    },
+    "endDate": {
+      "edit": {
+        "label": "Slutdato",
+        "description": "Slutdato for projektet",
+        "placeholder": "Vælg slutdato"
+      }
+    },
+    "description": {
+      "edit": {
+        "label": "Beskrivelse",
+        "description": "Detaljeret beskrivelse af projektet",
+        "placeholder": "Skriv en detaljeret beskrivelse"
+      }
+    },
+    "shortDescription": {
+      "edit": {
+        "label": "Kort Beskrivelse",
+        "description": "Kort beskrivelse til brug i lister",
+        "placeholder": "Skriv en kort beskrivelse"
+      }
+    },
+    "challenge": {
+      "edit": {
+        "label": "Udfordringer",
+        "description": "Hovedudfordringer i projektet",
+        "placeholder": "Beskriv projektets udfordringer"
+      }
+    },
+    "solution": {
+      "edit": {
+        "label": "Løsninger",
+        "description": "Løsninger og tilgang til udfordringerne",
+        "placeholder": "Beskriv løsningerne"
+      }
+    },
+    "featuredVideo": {
+      "edit": {
+        "label": "Fremhævet Video",
+        "description": "Fremhævet video for projektet",
+        "placeholder": "Tilføj fremhævet video"
+      }
+    },
+    "featuredImagesTitle": {
+      "edit": {
+        "label": "Featured Images Titel",
+        "description": "Titel for featured images sektion",
+        "placeholder": "Indtast titel for billeder"
+      }
+    },
+    "featuredImagesDescription": {
+      "edit": {
+        "label": "Featured Images Beskrivelse",
+        "description": "Beskrivelse af featured images",
+        "placeholder": "Beskriv billederne"
+      }
+    },
+    "featuredImages": {
+      "edit": {
+        "label": "Fremhævede Billeder",
+        "description": "Fremhævede billeder for projektet",
+        "placeholder": "Upload fremhævede billeder"
+      }
+    },
+    "shortFormVideosTitle": {
+      "edit": {
+        "label": "Short Form Videos Titel",
+        "description": "Titel for short form videos sektion",
+        "placeholder": "Indtast titel for korte videoer"
+      }
+    },
+    "shortFormVideos": {
+      "edit": {
+        "label": "Korte Videoer",
+        "description": "Korte videoer (9:16 format)",
+        "placeholder": "Tilføj korte videoer"
+      }
+    },
+    "longFormVideosTitle": {
+      "edit": {
+        "label": "Long Form Videos Titel",
+        "description": "Titel for long form videos sektion",
+        "placeholder": "Indtast titel for lange videoer"
+      }
+    },
+    "longFormVideos": {
+      "edit": {
+        "label": "Lange Videoer",
+        "description": "Lange videoer (16:9 format)",
+        "placeholder": "Tilføj lange videoer"
+      }
+    },
+    "contentStrategy": {
+      "edit": {
+        "label": "Content Strategy",
+        "description": "Content strategy teknikker og tilgange",
+        "placeholder": "Tilføj content strategy"
+      }
+    },
+    "productionTechniques": {
+      "edit": {
+        "label": "Produktionsteknikker",
+        "description": "Produktionsteknikker og metoder",
+        "placeholder": "Tilføj produktionsteknikker"
+      }
+    },
+    "results": {
+      "edit": {
+        "label": "Resultater",
+        "description": "Resultater og metrics fra projektet",
+        "placeholder": "Tilføj resultater"
+      }
+    },
+    "links": {
+      "edit": {
+        "label": "Links",
+        "description": "Links til eksterne ressourcer",
+        "placeholder": "Tilføj links"
+      }
+    },
+    "seo": {
+      "edit": {
+        "label": "SEO",
+        "description": "SEO indstillinger for projektet",
+        "placeholder": "Konfigurer SEO"
+      }
+    }
+  }
+} 
