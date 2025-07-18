@@ -21,4 +21,6 @@ services:
       - key: API_TOKEN_SALT
         generateValue: true
       - key: TRANSFER_TOKEN_SALT
-        generateValue: true 
+        generateValue: true
+      - key: PUBLIC_URL
+        value: https://line21-strapi-cms.onrender.com 
