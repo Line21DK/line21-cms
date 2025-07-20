@@ -1,4 +1,5 @@
 export default ({ env }) => ({
+  url: env('PUBLIC_URL', 'https://line21-cms.onrender.com'),
   auth: {
     secret: 'default-admin-jwt-secret',
   },
