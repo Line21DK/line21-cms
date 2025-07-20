@@ -4,5 +4,5 @@ export default ({ env }) => ({
   app: {
     keys: ['defaultKey1', 'defaultKey2'],
   },
-  url: env('PUBLIC_URL', 'http://localhost:10000'),
+  url: env('PUBLIC_URL', 'https://line21-strapi-cms.onrender.com'),
 });
