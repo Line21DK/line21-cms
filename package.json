@@ -14,6 +14,7 @@
     "start:test": "echo 'NODE_ENV:' $NODE_ENV && echo 'PORT:' $PORT && echo 'HOST:' $HOST && echo 'Starting Strapi...' && timeout 30 strapi start || echo 'Strapi failed to start or timed out'",
     "start:express": "node test-server.js",
     "start:simple": "node test-server.js",
+    "start:http": "node simple-server.js",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
