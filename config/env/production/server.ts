@@ -8,4 +8,10 @@ export default ({ env }) => ({
   admin: {
     url: '/admin',
   },
+  proxy: {
+    enabled: true,
+    ssl: true,
+    host: '0.0.0.0',
+    port: 10000,
+  },
 }); 
