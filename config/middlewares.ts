@@ -9,12 +9,4 @@ export default [
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
-  {
-    name: 'strapi::cors',
-    config: {
-      enabled: true,
-      headers: '*',
-      origin: ['http://localhost:3000', 'https://line21-strapi-cms.onrender.com']
-    }
-  }
 ];
