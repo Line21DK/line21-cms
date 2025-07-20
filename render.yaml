@@ -10,7 +10,7 @@ services:
       - key: NODE_ENV
         value: production
       - key: PORT
-        value: 1337
+        value: 10000
       - key: DATABASE_CLIENT
         value: sqlite
       - key: DATABASE_FILENAME
