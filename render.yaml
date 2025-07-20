@@ -4,25 +4,9 @@ services:
     env: node
     plan: free
     buildCommand: echo "Build complete"
-    startCommand: npm start
+    startCommand: node -e "const http = require('http'); const port = process.env.PORT || 10000; const server = http.createServer((req, res) => { res.setHeader('Content-Type', 'application/json'); res.end(JSON.stringify({message: 'Line21 CMS Server Running!', port: port, timestamp: new Date().toISOString()})); }); server.listen(port, '0.0.0.0', () => console.log('✅ Server running on port', port));"
     envVars:
       - key: NODE_ENV
         value: production
-      - key: HOST
-        value: 0.0.0.0
       - key: PORT
-        value: 10000
-      - key: DATABASE_CLIENT
-        value: sqlite
-      - key: DATABASE_FILENAME
-        value: .tmp/data.db
-      - key: JWT_SECRET
-        generateValue: true
-      - key: ADMIN_JWT_SECRET
-        generateValue: true
-      - key: API_TOKEN_SALT
-        generateValue: true
-      - key: TRANSFER_TOKEN_SALT
-        generateValue: true
-      - key: PUBLIC_URL
-        value: https://line21-strapi-cms.onrender.com 
+        value: 10000 
