@@ -3,7 +3,7 @@ services:
     name: line21-strapi-cms
     env: node
     plan: free
-    buildCommand: npm install
+    buildCommand: npm install && npm run build
     startCommand: npm run start
     healthCheckPath: /health
     envVars:
