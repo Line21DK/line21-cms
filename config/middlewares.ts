@@ -1,17 +1,20 @@
 export default [
-  'strapi::logger',
   'strapi::errors',
   'strapi::security',
+  'strapi::cors',
+  'strapi::poweredBy',
+  'strapi::logger',
+  'strapi::query',
+  'strapi::body',
+  'strapi::session',
+  'strapi::favicon',
+  'strapi::public',
   {
     name: 'strapi::cors',
     config: {
+      enabled: true,
       headers: '*',
-      origin: ['http://localhost:3000', 'http://127.0.0.1:3000', 'https://line21.dk', 'https://www.line21.dk']
+      origin: ['http://localhost:3000', 'https://line21-strapi-cms.onrender.com']
     }
-  },
-  'strapi::poweredBy',
-  'strapi::query',
-  'strapi::body',
-  'strapi::favicon',
-  'strapi::public',
+  }
 ];
