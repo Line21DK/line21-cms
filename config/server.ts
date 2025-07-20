@@ -5,7 +5,4 @@ export default ({ env }) => ({
     keys: ['defaultKey1', 'defaultKey2'],
   },
   url: env('PUBLIC_URL', 'http://localhost:10000'),
-  admin: {
-    url: env('ADMIN_URL', '/admin'),
-  },
 });
