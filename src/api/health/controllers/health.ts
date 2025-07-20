@@ -1,5 +1,6 @@
 export default {
   async check(ctx) {
-    ctx.body = { status: 'ok', timestamp: new Date().toISOString() };
+    const result = await strapi.service('api::health.health').check();
+    ctx.body = result;
   },
 }; 

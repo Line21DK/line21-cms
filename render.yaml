@@ -5,11 +5,12 @@ services:
     plan: free
     buildCommand: npm install
     startCommand: npm run start
+    healthCheckPath: /health
     envVars:
       - key: NODE_ENV
         value: production
       - key: PORT
-        value: 10000
+        value: 1337
       - key: DATABASE_CLIENT
         value: sqlite
       - key: DATABASE_FILENAME
