@@ -8,4 +8,4 @@ dist/
 .DS_Store
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log* 
+yarn-error.log* export_*.tar.gz
