@@ -4,4 +4,9 @@ export default ({ env }) => ({
       jwtSecret: 'default-jwt-secret-for-testing',
     },
   },
+  upload: {
+    config: {
+      sizeLimit: 250 * 1024 * 1024, // 250 MB
+    },
+  },
 });
