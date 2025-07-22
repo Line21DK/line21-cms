@@ -1,8 +1,12 @@
 export default ({ env }) => ({
-  host: env('HOST', '0.0.0.0'),
-  port: env.int('PORT', 10000),
+  host: env('HOST', '127.0.0.1'),
+  port: env.int('PORT', 1337),
   app: {
     keys: ['defaultKey1', 'defaultKey2'],
   },
-  url: env('PUBLIC_URL', 'https://line21-cms.onrender.com'),
+  url: env('PUBLIC_URL', 'http://localhost:1337'),
+  cors: {
+    enabled: true,
+    origin: 'https://line21.dk',
+  },
 });
