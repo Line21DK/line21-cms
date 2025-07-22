@@ -534,6 +534,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     solution: Schema.Attribute.Text;
     startDate: Schema.Attribute.Date;
     thumbnail: Schema.Attribute.Media<'images'>;
+    thumbnailUrl: Schema.Attribute.String;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

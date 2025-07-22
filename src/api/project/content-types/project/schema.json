@@ -13,36 +13,31 @@
   "attributes": {
     "featured": {
       "type": "boolean",
-      "default": false,
-      "description": "Vises på forsiden som featured projekt"
+      "default": false
     },
     "title": {
       "type": "string",
-      "required": true,
-      "description": "Projektets hovedtitel"
+      "required": true
     },
     "slug": {
       "type": "uid",
       "targetField": "title",
-      "required": true,
-      "description": "URL-slug for projektet"
+      "required": true
     },
     "client": {
       "type": "string",
-      "required": true,
-      "description": "Klientens navn"
+      "required": true
     },
     "category": {
       "type": "enumeration",
+      "required": true,
       "enum": [
         "Creative",
         "Technology",
         "Corporate",
         "Educational",
         "Entertainment"
-      ],
-      "required": true,
-      "description": "Projektets kategori"
+      ]
     },
     "projectIcon": {
       "type": "enumeration",
@@ -55,8 +50,7 @@
         "Education & Learning",
         "Art & Design",
         "Film & Video"
-      ],
-      "description": "Ikon der repræsenterer projektet"
+      ]
     },
     "thumbnail": {
       "type": "media",
@@ -64,57 +58,48 @@
       "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "description": "Hovedbillede for projektet"
+      ]
+    },
+    "thumbnailUrl": {
+      "type": "string"
     },
     "role": {
       "type": "string",
-      "required": true,
-      "description": "Din rolle i projektet"
+      "required": true
     },
     "year": {
       "type": "integer",
-      "required": true,
-      "description": "År projektet blev udført"
+      "required": true
     },
     "startDate": {
-      "type": "date",
-      "description": "Startdato for projektet"
+      "type": "date"
     },
     "endDate": {
-      "type": "date",
-      "description": "Slutdato for projektet"
+      "type": "date"
     },
     "description": {
       "type": "text",
-      "required": true,
-      "description": "Detaljeret beskrivelse af projektet"
+      "required": true
     },
     "shortDescription": {
       "type": "text",
-      "required": true,
-      "description": "Kort beskrivelse til brug i lister"
+      "required": true
     },
     "challenge": {
-      "type": "text",
-      "description": "Hovedudfordringer i projektet"
+      "type": "text"
     },
     "solution": {
-      "type": "text",
-      "description": "Løsninger og tilgang til udfordringerne"
+      "type": "text"
     },
     "featuredVideo": {
       "type": "component",
-      "component": "shared.video-content",
-      "description": "Fremhævet video for projektet"
+      "component": "shared.video-content"
     },
     "featuredImagesTitle": {
-      "type": "string",
-      "description": "Titel for featured images sektion"
+      "type": "string"
     },
     "featuredImagesDescription": {
-      "type": "text",
-      "description": "Beskrivelse af featured images"
+      "type": "text"
     },
     "featuredImages": {
       "type": "media",
@@ -122,57 +107,47 @@
       "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "description": "Fremhævede billeder for projektet"
+      ]
     },
     "shortFormVideosTitle": {
-      "type": "string",
-      "description": "Titel for short form videos sektion"
+      "type": "string"
     },
     "shortFormVideos": {
       "type": "component",
       "component": "shared.video-content",
-      "repeatable": true,
-      "description": "Korte videoer (9:16 format)"
+      "repeatable": true
     },
     "longFormVideosTitle": {
-      "type": "string",
-      "description": "Titel for long form videos sektion"
+      "type": "string"
     },
     "longFormVideos": {
       "type": "component",
       "component": "shared.video-content",
-      "repeatable": true,
-      "description": "Lange videoer (16:9 format)"
+      "repeatable": true
     },
     "contentStrategy": {
       "type": "component",
       "component": "shared.project-result",
-      "repeatable": true,
-      "description": "Content strategy teknikker og tilgange"
+      "repeatable": true
     },
     "productionTechniques": {
       "type": "component",
       "component": "shared.project-result",
-      "repeatable": true,
-      "description": "Produktionsteknikker og metoder"
+      "repeatable": true
     },
     "results": {
       "type": "component",
       "component": "shared.project-result",
-      "repeatable": true,
-      "description": "Resultater og metrics fra projektet"
+      "repeatable": true
     },
     "links": {
       "type": "component",
       "component": "shared.project-result",
-      "repeatable": true,
-      "description": "Links til eksterne ressourcer"
+      "repeatable": true
     },
     "seo": {
       "type": "component",
-      "component": "shared.seo",
-      "description": "SEO indstillinger for projektet"
+      "component": "shared.seo"
     }
   }
 }
