@@ -1,6 +1,4 @@
-import { Strapi } from '@strapi/strapi';
-
-export default ({ strapi }: { strapi: Strapi }) => ({
+export default ({ strapi }: { strapi: any }) => ({
   async triggerGitHubAction(ctx) {
     try {
       const { body } = ctx.request;

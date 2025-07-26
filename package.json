@@ -19,12 +19,14 @@
     "push": "node push-to-github.js",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
-    "upgrade:dry": "npx @strapi/upgrade latest --dry"
+    "upgrade:dry": "npx @strapi/upgrade latest --dry",
+    "audit:fix": "npm audit fix --force",
+    "audit:check": "npm audit --audit-level=high"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.18.0",
     "@strapi/plugin-users-permissions": "5.18.0",
-    "@strapi/strapi": "5.18.0",
+    "@strapi/strapi": "^5.18.0",
     "axios": "^1.10.0",
     "basic-ftp": "^5.0.5",
     "better-sqlite3": "11.3.0",
@@ -34,8 +36,8 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
-    "strapi-provider-upload-ftp": "^3.0.0-alpha.25.2",
-    "styled-components": "^6.0.0"
+    "styled-components": "^6.0.0",
+    "tough-cookie": "^5.1.2"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -1,5 +1,3 @@
-import { prefixPluginTranslations } from '@strapi/helper-plugin';
-
 export default {
   register(app: any) {
     // Add custom CSS for thumbnail grouping
@@ -78,24 +76,6 @@ export default {
   },
 
   async registerTrads({ locales }: { locales: string[] }) {
-    const importedTrads = await Promise.all(
-      locales.map((locale) => {
-        return import(`./translations/${locale}.json`)
-          .then(({ default: data }) => {
-            return {
-              data: prefixPluginTranslations(data, 'thumbnail-grouping'),
-              locale,
-            };
-          })
-          .catch(() => {
-            return {
-              data: {},
-              locale,
-            };
-          });
-      })
-    );
-
-    return Promise.resolve(importedTrads);
+    return Promise.resolve([]);
   },
 }; 
