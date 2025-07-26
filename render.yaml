@@ -4,14 +4,14 @@ services:
     env: node
     plan: free
     buildCommand: NODE_OPTIONS='--max-old-space-size=512' npm run build
-    startCommand: NODE_OPTIONS='--max-old-space-size=512' npm run start
+    startCommand: NODE_OPTIONS='--max-old-space-size=512' npm run start:simple
     envVars:
       - key: NODE_ENV
         value: production
       - key: HOST
         value: 0.0.0.0
       - key: PORT
-        value: 10000
+        value: "10000"
       - key: DATABASE_CLIENT
         value: sqlite
       - key: DATABASE_FILENAME
