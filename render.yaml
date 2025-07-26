@@ -4,13 +4,10 @@ services:
     env: node
     plan: free
     buildCommand: echo "Skipping build - using simple Express server"
-    startCommand: npm run start:minimal
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
-      - key: HOST
-        value: 0.0.0.0
-
       - key: PORT
         value: "10000"
       - key: HOST
