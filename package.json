@@ -17,7 +17,7 @@
     "start:express": "node test-server.js",
     "start:simple": "node server.js",
     "start:minimal": "node minimal-server.js",
-    "start": "node index.js",
+    "start": "node simple.js",
     "start:http": "node simple-server.js",
     "push": "node push-to-github.js",
     "strapi": "strapi",

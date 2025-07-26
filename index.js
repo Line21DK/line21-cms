@@ -2,11 +2,19 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 10000;
 
+console.log('🚀 Starting Line21 CMS server...');
+console.log('📊 Environment variables:');
+console.log('  - PORT:', process.env.PORT);
+console.log('  - HOST:', process.env.HOST);
+console.log('  - NODE_ENV:', process.env.NODE_ENV);
+console.log('  - PWD:', process.cwd());
+
 // Basic middleware
 app.use(express.json());
 
 // Health check
 app.get('/health', (req, res) => {
+  console.log('📝 Health check requested');
   res.json({ 
     status: 'ok', 
     port, 
@@ -59,6 +67,7 @@ app.post('/api/webhook/github', (req, res) => {
 
 // Root endpoint
 app.get('/', (req, res) => {
+  console.log('📝 Root endpoint requested');
   res.json({ 
     message: 'Line21 CMS Server', 
     status: 'running', 
@@ -68,20 +77,47 @@ app.get('/', (req, res) => {
 });
 
 // Start server - MUST bind to 0.0.0.0 for Render
-app.listen(port, '0.0.0.0', () => {
+const server = app.listen(port, '0.0.0.0', () => {
   console.log(`🚀 Server running on port ${port}`);
   console.log(`🌐 Host: 0.0.0.0`);
   console.log(`🔗 Health: http://0.0.0.0:${port}/health`);
   console.log(`🔗 Webhook: http://0.0.0.0:${port}/api/webhook/github`);
+  console.log(`✅ Server is ready to accept connections`);
+});
+
+// Error handling for server
+server.on('error', (error) => {
+  console.error('❌ Server error:', error);
+  if (error.code === 'EADDRINUSE') {
+    console.error('❌ Port is already in use');
+  }
+  process.exit(1);
 });
 
 // Graceful shutdown
 process.on('SIGTERM', () => {
   console.log('🛑 SIGTERM received, shutting down gracefully');
-  process.exit(0);
+  server.close(() => {
+    console.log('✅ Server closed');
+    process.exit(0);
+  });
 });
 
 process.on('SIGINT', () => {
   console.log('🛑 SIGINT received, shutting down gracefully');
-  process.exit(0);
+  server.close(() => {
+    console.log('✅ Server closed');
+    process.exit(0);
+  });
+});
+
+// Handle uncaught errors
+process.on('uncaughtException', (err) => {
+  console.error('❌ Uncaught Exception:', err);
+  process.exit(1);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('❌ Unhandled Rejection at:', promise, 'reason:', reason);
+  process.exit(1);
 }); 
