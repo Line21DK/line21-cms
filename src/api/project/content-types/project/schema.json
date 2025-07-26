@@ -61,7 +61,8 @@
       ]
     },
     "thumbnailUrl": {
-      "type": "string"
+      "type": "string",
+      "description": "External URL for thumbnail (alternative to uploaded image)"
     },
     "role": {
       "type": "string",
