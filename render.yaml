@@ -3,8 +3,8 @@ services:
     name: line21-cms
     env: node
     plan: free
-    buildCommand: npm run build
-    startCommand: npm run start
+    buildCommand: NODE_OPTIONS='--max-old-space-size=512' npm run build
+    startCommand: NODE_OPTIONS='--max-old-space-size=512' npm run start
     envVars:
       - key: NODE_ENV
         value: production
@@ -25,4 +25,6 @@ services:
       - key: TRANSFER_TOKEN_SALT
         generateValue: true
       - key: PUBLIC_URL
-        value: https://line21-cms.onrender.com 
+        value: https://line21-cms.onrender.com
+      - key: GITHUB_TOKEN
+        value: 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 
