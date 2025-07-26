@@ -1,0 +1,10 @@
+# Ignore Strapi files during Render deployment
+.strapi/
+.strapi-cloud.json
+.strapi-updater.json
+src/
+config/
+database/
+dist/
+node_modules/@strapi/
+*.tar.gz 

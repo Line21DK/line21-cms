@@ -3,7 +3,7 @@ services:
     name: line21-cms
     env: node
     plan: free
-    buildCommand: echo "Skipping build - using simple Express server"
+    buildCommand: echo "Skipping build - using simple HTTP server"
     startCommand: npm start
     envVars:
       - key: NODE_ENV
