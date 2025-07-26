@@ -1,6 +1,6 @@
 export default ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
-  port: env.int('PORT', 1337),
+  port: env.int('PORT', 10000),
   app: {
     keys: ['defaultKey1', 'defaultKey2'],
   },

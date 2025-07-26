@@ -9,7 +9,7 @@
     "console": "strapi console",
     "deploy": "strapi deploy",
     "dev": "strapi develop",
-    "develop": "NODE_OPTIONS='--max-old-space-size=512' strapi develop --host 0.0.0.0 --port $PORT",
+    "develop": "NODE_OPTIONS='--max-old-space-size=512' strapi develop",
     "start": "NODE_OPTIONS='--max-old-space-size=512' strapi start",
     "start:debug": "echo 'Starting Strapi on port:' $PORT && echo 'Host:' $HOST && strapi start",
     "start:test": "echo 'NODE_ENV:' $NODE_ENV && echo 'PORT:' $PORT && echo 'HOST:' $HOST && echo 'Starting Strapi...' && timeout 30 strapi start || echo 'Strapi failed to start or timed out'",
