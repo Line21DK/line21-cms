@@ -16,6 +16,7 @@
     "start:test": "echo 'NODE_ENV:' $NODE_ENV && echo 'PORT:' $PORT && echo 'HOST:' $HOST && echo 'Starting Strapi...' && timeout 30 strapi start || echo 'Strapi failed to start or timed out'",
     "start:express": "node test-server.js",
     "start:simple": "node server.js",
+    "start:minimal": "node minimal-server.js",
     "start:http": "node simple-server.js",
     "push": "node push-to-github.js",
     "strapi": "strapi",

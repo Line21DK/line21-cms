@@ -4,14 +4,13 @@ services:
     env: node
     plan: free
     buildCommand: echo "Skipping build - using simple Express server"
-    startCommand: NODE_OPTIONS='--max-old-space-size=256' npm run start:simple
+    startCommand: npm run start:minimal
     envVars:
       - key: NODE_ENV
         value: production
       - key: HOST
         value: 0.0.0.0
-      - key: NODE_OPTIONS
-        value: --max-old-space-size=256
+
       - key: PORT
         value: "10000"
       - key: DATABASE_CLIENT
