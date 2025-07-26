@@ -21,7 +21,7 @@ app.get('/health', (req, res) => {
 app.post('/api/webhook/github', (req, res) => {
   console.log('🔗 Webhook received:', req.body);
   
-  // Simulate GitHub API call
+  // GitHub API call
   const githubUrl = 'https://api.github.com/repos/brianraaby/line21-website/dispatches';
   const githubToken = process.env.GITHUB_TOKEN;
   
@@ -59,6 +59,35 @@ app.post('/api/webhook/github', (req, res) => {
   .catch(error => {
     console.error('❌ Webhook error:', error);
     res.status(500).json({ error: 'Webhook error: ' + error.message });
+  });
+});
+
+// Strapi API endpoints (simplified)
+app.get('/api/projects', (req, res) => {
+  res.json({
+    data: [
+      {
+        id: 1,
+        title: 'Sample Project',
+        description: 'This is a sample project for testing',
+        featured: true,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString()
+      }
+    ]
+  });
+});
+
+app.get('/api/projects/:id', (req, res) => {
+  res.json({
+    data: {
+      id: req.params.id,
+      title: 'Sample Project',
+      description: 'This is a sample project for testing',
+      featured: true,
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString()
+    }
   });
 });
 

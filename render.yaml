@@ -3,13 +3,15 @@ services:
     name: line21-cms
     env: node
     plan: free
-    buildCommand: NODE_OPTIONS='--max-old-space-size=512' npm run build
-    startCommand: NODE_OPTIONS='--max-old-space-size=512' npm run start:simple
+    buildCommand: echo "Skipping build - using simple Express server"
+    startCommand: NODE_OPTIONS='--max-old-space-size=256' npm run start:simple
     envVars:
       - key: NODE_ENV
         value: production
       - key: HOST
         value: 0.0.0.0
+      - key: NODE_OPTIONS
+        value: --max-old-space-size=256
       - key: PORT
         value: "10000"
       - key: DATABASE_CLIENT
