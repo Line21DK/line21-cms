@@ -9,9 +9,9 @@ services:
     dockerContext: .
     envVars:
       - key: KEY
-        value: "your-secret-key-here"
+        value: "line21-directus-secret-key-2024"
       - key: SECRET
-        value: "your-secret-here"
+        value: "line21-directus-secret-2024-super-secure"
       - key: DB_CLIENT
         value: "pg"
       - key: DB_HOST
