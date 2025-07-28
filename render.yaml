@@ -5,7 +5,6 @@ services:
     plan: free
     dockerfilePath: ./Dockerfile
     dockerContext: .
-    startCommand: ""
     envVars:
       - key: KEY
         value: "your-secret-key-here"
