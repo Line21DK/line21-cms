@@ -56,5 +56,15 @@ services:
         value: "false"
       - key: LOG_LEVEL
         value: "debug"
+      - key: PORT
+        value: "8055"
+      - key: HOST
+        value: "0.0.0.0"
+      - key: NODE_ENV
+        value: "production"
+      - key: SERVE_APP
+        value: "true"
+      - key: SERVE_API
+        value: "true"
 
 # Database er allerede oprettet som: dpg-cp8j8v6n7f5s73f8v8q0-a.oregon-postgres.render.com 
