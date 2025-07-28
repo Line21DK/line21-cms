@@ -1,13 +1,7 @@
-FROM node:18-alpine
-
-# Installer Directus globalt
-RUN npm install -g directus
-
-# Opret app mappe
-WORKDIR /app
+FROM directus/directus:latest
 
 # Eksponer port
 EXPOSE 8055
 
-# Start Directus
+# Start Directus med den korrekte kommando
 CMD ["directus", "start"] 
