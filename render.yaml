@@ -1,0 +1,68 @@
+services:
+  - type: web
+    name: line21-directus
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    envVars:
+      - key: KEY
+        value: "your-secret-key-here"
+      - key: SECRET
+        value: "your-secret-here"
+      - key: DB_CLIENT
+        value: "pg"
+      - key: DB_HOST
+        value: "postgres"
+      - key: DB_PORT
+        value: "5432"
+      - key: DB_DATABASE
+        value: "directus"
+      - key: DB_USER
+        value: "directus"
+      - key: DB_PASSWORD
+        value: "directus"
+      - key: ADMIN_EMAIL
+        value: "admin@line21.dk"
+      - key: ADMIN_PASSWORD
+        value: "admin123"
+      - key: CACHE_ENABLED
+        value: "true"
+      - key: CACHE_STORE
+        value: "redis"
+      - key: REDIS
+        value: "redis://redis:6379"
+      - key: RATE_LIMITER_ENABLED
+        value: "true"
+      - key: RATE_LIMITER_POINTS
+        value: "25"
+      - key: RATE_LIMITER_DURATION
+        value: "1"
+      - key: RATE_LIMITER_STORE
+        value: "redis"
+      - key: CORS_ENABLED
+        value: "true"
+      - key: CORS_ORIGIN
+        value: "*"
+      - key: CORS_METHODS
+        value: "GET,POST,PATCH,DELETE,OPTIONS"
+      - key: CORS_ALLOWED_HEADERS
+        value: "Content-Type,Authorization"
+      - key: CORS_EXPOSED_HEADERS
+        value: "Content-Range"
+      - key: CORS_CREDENTIALS
+        value: "true"
+      - key: CORS_MAX_AGE
+        value: "18000"
+      - key: PUBLIC_URL
+        value: "https://line21-directus.onrender.com"
+      - key: LOG_LEVEL
+        value: "info"
+      - key: TELEMETRY
+        value: "false"
+
+databases:
+  - name: line21-directus-postgres
+    databaseName: directus
+    user: directus
+    plan: free 
