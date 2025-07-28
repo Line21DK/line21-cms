@@ -29,7 +29,7 @@ services:
       - key: ADMIN_PASSWORD
         value: "admin123"
       - key: DB_SSL
-        value: "false"
+        value: "true"
       - key: CORS_ENABLED
         value: "true"
       - key: CORS_ORIGIN
@@ -55,7 +55,7 @@ services:
       - key: LOG_LEVEL
         value: "debug"
       - key: PORT
-        value: "8055"
+        value: "10000"
       - key: HOST
         value: "0.0.0.0"
 
