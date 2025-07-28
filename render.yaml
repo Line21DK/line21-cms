@@ -5,7 +5,7 @@ services:
     name: line21-directus
     env: docker
     plan: free
-    dockerfilePath: ./Dockerfile
+    dockerfilePath: ./Dockerfile.simple
     dockerContext: .
     envVars:
       - key: KEY
