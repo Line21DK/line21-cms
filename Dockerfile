@@ -1,5 +1,8 @@
 FROM directus/directus:latest
 
+# Installer pg for database test
+RUN npm install pg
+
 # Eksponer port
 EXPOSE 10000
 

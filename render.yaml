@@ -30,6 +30,8 @@ services:
         value: "admin123"
       - key: DB_SSL
         value: "true"
+      - key: DB_SSL_REJECT_UNAUTHORIZED
+        value: "false"
       - key: CORS_ENABLED
         value: "true"
       - key: CORS_ORIGIN
